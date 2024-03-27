@@ -1,0 +1,174 @@
+/* Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    background-color: rgb(31, 30, 30);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+main{
+    width: 35vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main h1{
+    color: white;
+    font-weight: 100;
+    max-width: 70%;
+    font-size: 2rem;
+    font-family: "Krona One", sans-serif;
+}
+
+main h1 strong{
+    color: #22D4FD;
+    font-weight: 700;
+}
+
+main p{
+    margin-top: 4vh;
+    max-width: 70%;
+    font-weight: 100;
+    text-align: left;
+    font-size: 1rem;
+    color: white;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+main .buttonDiv{
+    margin-top: 4vh;
+    width: 70%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .buttonDiv h5{
+    margin-top: 3vh;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 400;
+}
+
+main .buttonDiv button{
+    width: 70%;
+    height: 6vh;
+    margin-top: 3vh;
+    background-color: transparent;
+    border: 2px solid #22d5fd69;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+
+main .buttonDiv button:hover{
+    cursor: pointer;
+    background-color: rgba(53, 52, 52, 0.479);
+    transform: scale(1.04);
+}
+
+main .buttonDiv button img{
+    height: 2.5vh;
+    margin-right: 0.4vw;
+}
+
+header{
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 32vw;
+    background-color: rgb(31, 30, 30);
+}
+
+header h5{
+    color: #22D4FD;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-left: 4vw;
+    transition: 0.3s ease-in-out;
+}
+
+header h5:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+footer{
+    width: 100vw;
+    height: 7vh;
+    background-color: #22D4FD;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 600px){
+    body{
+        flex-direction: column;
+    }
+
+    main{
+        margin-top: 60vh;
+        width: 100vw;
+        height: 100vh;
+        margin-bottom: 10vh;
+    }
+
+    #imgRight{
+        width: 50vw;
+    }
+
+    #imgLeft{
+        margin-top: 10vh;
+        width: 70vw;
+    }
+
+    main h1{
+        max-width: 100%;
+        padding-left: 5vw;
+    }
+
+    main p{
+        padding-left: 5vw;
+        font-size: 0.8rem;
+    }
+
+    main .topM{
+        margin-top: 20vh;
+    }
+
+    main .pmn{
+        font-size: 0.6rem !important;
+    }
+
+    main .buttonDiv{
+        width: 100%;
+    }
+}
